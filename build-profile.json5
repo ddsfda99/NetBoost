@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\legion\\.ohos\\config\\default_NetBoost_n3qcRF-VCLxu0EEzS9uf8Lz879k331a9Po6NdL90Zho=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B03E5F0C740E2874EB594EAA61EAC86A3744FB4C8B20B6C60F2CA4E943649718B0938B8EED93242",
+          "profile": "C:\\Users\\legion\\.ohos\\config\\default_NetBoost_n3qcRF-VCLxu0EEzS9uf8Lz879k331a9Po6NdL90Zho=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\legion\\.ohos\\config\\default_NetBoost_n3qcRF-VCLxu0EEzS9uf8Lz879k331a9Po6NdL90Zho=.p12",
+          "storePassword": "0000001B5F859E9750C0FFE20748056F16DB79E7E279E017A4CE6BCAF0779AC324C654A7D57DC4E9CEDAD6"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.1(19)",
+        "compatibleSdkVersion": "5.1.1(19)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
