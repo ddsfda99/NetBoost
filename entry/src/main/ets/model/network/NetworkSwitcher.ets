@@ -32,11 +32,11 @@ export class NetworkSwitcher {
     if (this.currentHandle && this.currentHandle.netId === preferred.netId) {
       return; // 已绑定同一网络，无需重复
     }
-    await connection.setAppNet(preferred); // 绑定到指定网络
+    await connection.setAppNet(preferred);
     this.currentHandle = preferred;
   }
 
-  /** 绑定回默认网络（等价于取消 App 级别绑定）。 */
+  /** 绑定回默认网络 */
   public async bindToDefault(): Promise<void> {
     const def = await connection.getDefaultNet();
     if (!def || def.netId === 0) {
