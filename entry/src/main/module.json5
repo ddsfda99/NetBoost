@@ -13,8 +13,9 @@
     "installationFree": false,
     "pages": "$profile:main_pages",
     "requestPermissions": [
-      {"name":"ohos.permission.INTERNET"},
-      {"name":"ohos.permission.GET_NETWORK_INFO"}
+      { "name": "ohos.permission.INTERNET" },
+      { "name": "ohos.permission.GET_NETWORK_INFO" },
+      { "name": "ohos.permission.SET_NETWORK_INFO" }
     ],
     "abilities": [
       {
