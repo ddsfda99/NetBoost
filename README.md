@@ -33,10 +33,10 @@
 │     │  ├─ pages/
 │     │  │  └─ Index.ets                 # 主界面：一键跑5轮 + 日志 + Summary
 │     │  └─ navigator/
-│     │     └─ NetworkNavigator.ets      # 挑战项：网络领航员软封装（可选）
+│     │     └─ NetworkNavigator.ets      # 挑战项：网络领航员软封装
 │     └─ common/
-│        ├─ Runner.ts                    # 串行切换 + 剔等待计时 + JSON 日志镜像
-│        ├─ HttpDownloader.ts            # 基础下载（默认网络）
+│        ├─ Runner.ts                    # 串行切换 + 剔除等待计时 + JSON 日志镜像
+│        ├─ HttpDownloader.ts            # 基础下载
 │        ├─ RangeDownloader.ts           # 断点续传封装（Range）
 │        ├─ WeakNetDetector.ts           # 判弱器（EWMA + CUSUM + fail_rate）
 │        ├─ PriorityPool.ts              # 并发池（小文件优先 + 动态并发）
